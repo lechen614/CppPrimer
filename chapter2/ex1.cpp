@@ -32,6 +32,8 @@ int main() {
     std::cout << "\062\115\10" << std::endl;
     std::cout << "\062\011\115\10" << std::endl;
 
+    int variable;
+    std::cout << "The value of variable is " << variable << std::endl;
 }
 
 // 2.5
