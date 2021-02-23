@@ -67,26 +67,4 @@ int main() {
     (b) i is a integer that hasn't been initialized, ip is a null pointer
     (c) ip is a pointer, ip2 is a integer
     */
-
-    // 2.26
-    /*
-    (a) illegal, const must be initialized during declaration
-    (b) legal
-    (c) legal
-    (d) illegal, sz cannot be changed.
-    */ 
-
-    // reference to const
-    int i = 42;
-    const int &r1 = i * 2; // legal
-    int &r2 = i * 2; // illegal!
-
-    // reference to const may refer to an changeable object
-        // reference itself can not be re-assigned, so add an additional const don't make any change.
-    int i = 42;
-    int &r1 = i;
-    const int &r2 = i;
-    r1 = 0;
-    std::cout << r2 << "," << i << std::endl;
-    std::cout << &r2 << "," << &i << std::endl;
 }
